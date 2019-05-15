@@ -19,8 +19,8 @@ RUN  apk --no-cache add \
      git clone -b master https://github.com/aiastia/lottery_bot.git "/root/bot" --depth 1 && \
      pip install --upgrade pip                && \
      cd  /root/bot                   && \
-     pip install -r requirements.txt       
-
+     pip install pyTelegramBotAPI
+     
 WORKDIR /root/bot/bot
 
 CMD cat ${token} >>/root/bot/bot/adminlist && \
