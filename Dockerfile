@@ -8,7 +8,7 @@ ENV token=0 \
     username3=3 \
     username4=4 \
     username5=5 \
-    username6=6 \
+    username6=6 
 
 RUN  apk --no-cache add \
                         wget \
