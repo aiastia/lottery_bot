@@ -28,7 +28,7 @@ RUN  apk --no-cache add \
      ln -s /usr/bin/python3 /usr/bin/python   && \
      ln -s /usr/bin/pip3    /usr/bin/pip     
      
-RUN  git clone -b manyuser git clone https://github.com/johnpoint/lottery_bot.git "/root/lottery_bot" --depth 1 && \
+RUN  git clone -b manyuser https://github.com/aiastia/lottery_bot.git "/root/lottery_bot" --depth 1 && \
      pip install --upgrade pip                && \
      cd  /root/lottery_bot                    && \
      pip install -r requirements.txt          && \
