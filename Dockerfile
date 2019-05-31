@@ -29,9 +29,8 @@ RUN  apk --no-cache add \
      ln -s /usr/bin/pip3    /usr/bin/pip     
      
 RUN  git clone https://github.com/aiastia/lottery_bot.git "/root/lottery_bot" --depth 1 && \
-     pip install --upgrade pip                && \
-     pip install pyTelegramBotAPI             && \
-     apk del --purge .build-deps 
+     pip install --upgrade pip && \
+     pip install pyTelegramBotAPI
 
 WORKDIR /root/lottery/bot
 
