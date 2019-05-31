@@ -25,14 +25,11 @@ RUN  apk --no-cache add \
                         git \
                         tar \
                         make \
-                        py3-pip \
-                        autoconf \
-                        automake \
-                        build-base \
-                        linux-headers         && \
+                        py3-pip         && \
      ln -s /usr/bin/python3 /usr/bin/python   && \
-     ln -s /usr/bin/pip3    /usr/bin/pip      && \
-     git clone -b manyuser git clone https://github.com/johnpoint/lottery_bot.git "/root/lottery_bot" --depth 1 && \
+     ln -s /usr/bin/pip3    /usr/bin/pip     
+     
+RUN  git clone -b manyuser git clone https://github.com/johnpoint/lottery_bot.git "/root/lottery_bot" --depth 1 && \
      pip install --upgrade pip                && \
      cd  /root/lottery_bot                    && \
      pip install -r requirements.txt          && \
