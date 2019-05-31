@@ -20,8 +20,7 @@ RUN  apk --no-cache add \
                         pcre-dev \
                         libev-dev \
                         libtool \
-                        libffi-dev            && \
-     apk --no-cache add --virtual .build-deps \
+                        libffi-dev  \
                         git \
                         tar \
                         make \
