@@ -3,12 +3,12 @@ FROM alpine:3.8
 
 ENV token=0 \
     botname=6 \
-    username1= \
-    username2= \
-    username3= \
-    username4= \
-    username5= \
-    username6= \
+    username1=1 \
+    username2=2 \
+    username3=3 \
+    username4=4 \
+    username5=5 \
+    username6=6 \
 
 RUN  apk --no-cache add \
                         wget \
